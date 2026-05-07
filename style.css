@@ -35,6 +35,20 @@ header {
     text-transform: uppercase;
 }
 
+.title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.34375;
+    color: #363940;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.375;
+    color: #95a1bb;
+}
+
 /* ========================== Style first section ======================= */
 
 .main-title {
@@ -45,11 +59,7 @@ header {
     margin-bottom: 30px;
 }
 
-.text {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.375;
-    color: #95a1bb;
+.main .text {
     margin-bottom: 40px;
 }
 
@@ -74,12 +84,12 @@ header {
     background-color: #f9fafc;
 }
 
-.title {
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 1.34375;
-    color: #363940;
+.rates-section .title {
     margin-bottom: 20px;
+}
+
+.rates-section .text {
+    margin-bottom: 40px;
 }
 
 .table {
@@ -146,6 +156,15 @@ th, td {
     padding: 100px 0;
 }
 
+.create-account-section .title {
+    padding-bottom: 50px;
+}
+
+.create-account-section .text {
+    margin-bottom: 40px;
+    max-width: 500px;
+}
+
 .list-item {
     margin-bottom: 15px;
     list-style-image: url(./assets/image/Mask.svg);
@@ -153,3 +172,58 @@ th, td {
     color: #363940;
 }
 
+input, select, fieldset, textarea, label, legend, input::placeholder, select::placeholder, textarea::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #95a1bb;
+    font-family: inherit;
+}
+
+input[type="text"] {
+    width: 100%;
+}
+
+input[type="email"], input[type="password"], input[type="date"], select {
+    width: 230px;
+    height: 50px;
+}
+
+fieldset {
+    width: 100%;
+    padding: 30px 15px;
+}
+
+textarea {
+    width: 100px;
+    min-height: 80px;
+    resize: none;
+}
+
+form .button {
+    width: 100%;
+}
+
+select {
+    background: url(./assets/image/Arrow-down.svg) no-repeat right 15px 50%;
+    appearance: none;
+}
+
+input[type="date"]::webkit-calendar-picker-indicator {
+    background: url(./assets/image/Calendar.svg) no-repeat;
+}
+
+/* ========================== Style footer =======================  */
+
+footer {
+    background-color: #0a61f7;
+    padding: 20px;
+    text-align: center;
+}
+
+small {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 157%;
+    color: #fff;   
+}

@@ -81,17 +81,20 @@
             <input type="email" placeholder="Email*">
             <input type="password" placeholder="Password*">
             <input type="date" name="" id="" placeholder="Date of Birth*">
-        </form>
-        <select name="" id="">
+            <select name="" id="">
                 <option value="" selected disabled>Country</option>
                 <option value="">Belarus</option>
                 <option value="">Russia</option>
                 <option value="">Poland</option>
-        </select>
-            <label for="">
-                    <input type="radio" name="stack">Frontend
+            </select>
+            <div>
+                <label for="">
+                    <input type="radio" name="stack" checked>Frontend
+                </label>
+                <label>
                     <input type="radio" name="stack">Backend
-            </label>
+                </label>
+            </div>
             <fieldset>
             <legend>Favorite Technologies</legend>
             <label for="">
@@ -107,11 +110,12 @@
                 <input type="checkbox" name="sc">Styled components
             </label>
             </fieldset>
-        <textarea name="" id="" placeholder="Something else about you..."></textarea>
-        <input type="button" value="registration">
+            <textarea name="" id="" placeholder="Something else about you..."></textarea>
+            <input class="button" type="button" value="registration">
+        </form>
         </section>
     <footer>
-        <p>Copyright © 2023. All rights reserved.</p>
+        <small>Copyright © 2023. All rights reserved.</small>
     </footer>
 </body>
 </html>
