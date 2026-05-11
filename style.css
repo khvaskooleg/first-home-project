@@ -8,8 +8,17 @@ html, body {
     font-family: 'Rubik', sans-serif;
 }
 
+.menu {
+    display: flex;
+    gap: 24px;
+}
+
 a {
     text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 ul {
@@ -19,11 +28,30 @@ ul {
 button {
     border: none;
     background-color: transparent;
+    transition: 0.2s;
+}
+
+button:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
 }
 
 header {
     background-color: #0A61F7;
     padding: 14px 0;
+}
+
+.head-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1140px;
+    padding: 0 15px;
 }
 
 .menu-item {
@@ -61,6 +89,7 @@ header {
 
 .main .text {
     margin-bottom: 40px;
+    max-width: 380px;
 }
 
 .button {
@@ -77,11 +106,28 @@ header {
     background-color: #0a61f7;
 }
 
+.main-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    height: 800px;
+}
+
+.main-img {
+    align-self: flex-end;
+}
+
 /* ========================== Style second section =======================  */
 
 .rates-section {
     padding: 100px 0;
     background-color: #f9fafc;
+}
+
+.rates-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .rates-section .title {
@@ -156,6 +202,11 @@ th, td {
     padding: 100px 0;
 }
 
+.account-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
 .create-account-section .title {
     padding-bottom: 50px;
 }
@@ -170,6 +221,25 @@ th, td {
     list-style-image: url(./assets/image/Mask.svg);
     margin-left: 30px;
     color: #363940;
+}
+
+form {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+    
+.stack, fieldset {
+    display: flex;
+    gap: 30px;
+}
+
+.fields-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 input, select, fieldset, textarea, label, legend, input::placeholder, select::placeholder, textarea::placeholder {
@@ -187,6 +257,7 @@ input[type="text"] {
 input[type="email"], input[type="password"], input[type="date"], select {
     width: 230px;
     height: 50px;
+    flex-grow: 1;
 }
 
 fieldset {
@@ -195,13 +266,14 @@ fieldset {
 }
 
 textarea {
-    width: 100px;
+    width: 100%;
     min-height: 80px;
     resize: none;
 }
 
 form .button {
     width: 100%;
+    text-align: center;
 }
 
 select {
@@ -227,3 +299,13 @@ small {
     line-height: 157%;
     color: #fff;   
 }
+
+/* @media screen and (max-width: 745px)  {
+
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+}
+  
+} */
