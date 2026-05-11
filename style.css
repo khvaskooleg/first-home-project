@@ -260,6 +260,10 @@ input[type="email"], input[type="password"], input[type="date"], select {
     flex-grow: 1;
 }
 
+input[type="checkbox"], input[type="radio"], input[type="date"], select {
+    cursor: pointer;
+}
+
 fieldset {
     width: 100%;
     padding: 30px 15px;
